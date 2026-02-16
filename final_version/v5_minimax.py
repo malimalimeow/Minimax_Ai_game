@@ -125,25 +125,26 @@ def evaluate(board):
     
     for row in range(n):
         for col in range(n):
-            if col + k < n:
+            if col + (k-1) < n:
                 if all(board[row][col+i]=="X" for i in range(k)):
                     return -1
                 elif all(board[row][col+i]=="O" for i in range(k)):
                     return 1
                 
-            if row + k < n and col+k <n:
+            if row + (k-1) < n:
                 if all(board[row+i][col]=="X" for i in range(k)):
                     return -1
                 elif all(board[row+i][col]=="O" for i in range(k)):
                     return 1
-                
-                elif all(board[row+i][col+i]=="X" for i in range(k)):
+                    
+            if row+ (k-1)<n and col+(k-1)<n:
+                if all(board[row+i][col+i]=="X" for i in range(k)):
                     return -1
                 
                 elif all(board[row+i][col+i]=="O" for i in range(k)):
                     return 1
                 
-            if row + k < n and col - k -1 >= 0:
+            if row + (k-1) < n and col - (k -1) >= 0:
                 if all(board[row+i][col-i]=="X" for i in range(k)):
                     return -1
                 
@@ -240,7 +241,7 @@ def check(board):
     
     for row in range(n):
         for col in range(n):
-            if col + k < n:
+            if col + (k-1) < n:
                 if all(board[row][col+i]=="X" for i in range(k)):
                     print("X wins")
                     return False
@@ -248,15 +249,16 @@ def check(board):
                     print("O wins")
                     return False
                 
-            if row + k < n:
+            if row + (k-1) < n:
                 if all(board[row+i][col]=="X" for i in range(k)):
                     print("X wins")
                     return False
                 elif all(board[row+i][col]=="O" for i in range(k)):
                     print("O wins")
                     return False
-                
-                elif all(board[row+i][col+i]=="X" for i in range(k)):
+
+            if row+(k-1)<n and col+(k-1)<n:
+                if all(board[row+i][col+i]=="X" for i in range(k)):
                     print("X wins")
                     return False
                 
@@ -264,7 +266,7 @@ def check(board):
                     print("O wins")
                     return False
                 
-            if row + k < n and col - k -1 >= 0:
+            if row + (k-1) < n and col -(k -1) >= 0:
                 if all(board[row+i][col-i]=="X" for i in range(k)):
                     print("X wins")
                     return False
@@ -281,3 +283,4 @@ def check(board):
                     
 
 play(5)           
+
