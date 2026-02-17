@@ -77,7 +77,7 @@ The project is structured into several functions, each handling a specific part 
 .
 ├── final_version/
 |   └── v5_minimax.py
-├──version/
+├── version/
 |    ├── v1_two_players.py
 |    ├── v2_random_ai.py
 |    ├── v3_blocking_ai.py
@@ -102,6 +102,7 @@ The project is structured into several functions, each handling a specific part 
 - **Control recursion depth dynamically:** Instead of starting with the medium AI and switching to hard later, explore using depth limits so the hard AI can be used from the beginning while keeping performance acceptable.
 - **Add more game:** Extend the application with similar board games that can reuse the algorithm, such as Gomoku, Connect 6, etc.
 ---
+
 
 
 
