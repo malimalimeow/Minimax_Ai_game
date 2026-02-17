@@ -92,7 +92,7 @@ The project is structured into several functions, each handling a specific part 
 ### What I Learned:
 - Basic concept of recursion
 - Basic minimax algorithm
-- Basic Alpha beta pruning 
+- Basic Alpha-beta pruning 
 - Structuring AI logic into multiple difficulty levels
 
 ---
@@ -102,6 +102,7 @@ The project is structured into several functions, each handling a specific part 
 - **Control recursion depth dynamically:** Instead of starting with the medium AI and switching to hard later, explore using depth limits so the hard AI can be used from the beginning while keeping performance acceptable.
 - **Add more game:** Extend the application with similar board games that can reuse the algorithm, such as Gomoku, Connect 6, etc.
 ---
+
 
 
 
