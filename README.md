@@ -49,10 +49,10 @@ The project is structured into several functions, each handling a specific part 
 
 ### Demo/Screenshots:
 
-![Demo](assets/initiate board and level selection interface.png)
+![Demo](assets/initiate_board_level_selection.png)
 *initiate board and level selection interface*
 
-![Demo](assets/game with draw result.png) 
+![Demo](assets/game_with_draw_result.png) 
 *Game with draw result interface*
 
 ---
@@ -102,6 +102,7 @@ The project is structured into several functions, each handling a specific part 
 - **Control recursion depth dynamically:** Instead of starting with the medium AI and switching to hard later, explore using depth limits so the hard AI can be used from the beginning while keeping performance acceptable.
 - **Add more game:** Extend the application with similar board games that can reuse the algorithm, such as Gomoku, Connect 6, etc.
 ---
+
 
 
 
