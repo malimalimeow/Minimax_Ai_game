@@ -1,7 +1,7 @@
 # Tic tac toe-Minimax algorithm(Python application)
 
 ### Overview:
-This is a Python‑based Tic‑Tac‑Toe game where the player competes against the computer with **three difficulty levels**.
+This is a Python‑based Tic‑Tac‑Toe game where the player competes against the computer with **three difficulty levels** and up to 6*6 board size.
 
 **Easy:** the computer places pieces randomly.
 
@@ -102,6 +102,7 @@ The project is structured into several functions, each handling a specific part 
 - **Control recursion depth dynamically:** Instead of starting with the medium AI and switching to hard later, explore using depth limits so the hard AI can be used from the beginning while keeping performance acceptable.
 - **Add more game:** Extend the application with similar board games that can reuse the algorithm, such as Gomoku, Connect 6, etc.
 ---
+
 
 
 
