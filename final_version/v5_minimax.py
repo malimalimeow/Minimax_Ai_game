@@ -159,6 +159,10 @@ def evaluate(board):
     
     
 def play(n):
+    if n > 6:
+        print("Coming soon!:D\n The maximum board length is 6 for now.")
+        return
+        
     board=create_board(n)
     print_board(board)
     
@@ -283,4 +287,5 @@ def check(board):
                     
 
 play(5)           
+
 
